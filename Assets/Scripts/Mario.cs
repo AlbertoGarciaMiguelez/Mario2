@@ -14,11 +14,12 @@ public class Mario : MonoBehaviour
 
     // Update is called once per frame
     void Update()
+
     {
         if(Input.GetKey(KeyCode.LeftArrow)) {
             transform.Translate(Vector3.left * speed * Time.deltaTime);
             
-        }else(Input.GetKey(KeyCode.RightArrow)){
+        }else if(Input.GetKey(KeyCode.RightArrow)){
             transform.Translate(Vector3.right * speed * Time.deltaTime);
              
         }
